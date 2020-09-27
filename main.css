@@ -287,6 +287,10 @@ ul.topnav form.dropdownIcon {
     }
 
     /*Projects Page - Mobile*/
+    body div.container-projects {
+        padding: 30% 0px 8% 0px;
+    } 
+
     .container-projects div.row div.col-2 {
         width: 10%
     }
@@ -430,7 +434,8 @@ h2.my-name {
 .row div.col-right ul button.ask-me {
     margin-top: 40px;
     border: none;
-    color: black;
+    color: #000000;
+    background-color: #F8F8FF;
     padding-left: 16px;
     padding-right: 16px;
 

@@ -3,29 +3,23 @@
 //---------- NAVIGATION --------------
 
 function didTapAboutMe() {
-    window.scrollTo({
-        top: document.getElementById('container-about-me').offsetTop,
-        left: 0,
-        behavior: 'smooth'
-    });
+    var scroll = new SmoothScroll();
+    var anchor = document.querySelector('#container-about-me');
+    scroll.animateScroll(anchor);
     closeDropdown();
 }
 
 function didTapProjects() {
-    window.scrollTo({
-        top: document.getElementById('container-projects').offsetTop,
-        left: 0,
-        behavior: 'smooth'
-    });
+    var scroll = new SmoothScroll();
+    var anchor = document.querySelector('#container-projects');
+    scroll.animateScroll(anchor);
     closeDropdown();
 }
 
 function didTapContact() {
-    window.scrollTo({
-        top: document.getElementById('container-contact-me').offsetTop,
-        left: 0,
-        behavior: 'smooth'
-    });
+    var scroll = new SmoothScroll();
+    var anchor = document.querySelector('#container-contact-me');
+    scroll.animateScroll(anchor);
     closeDropdown();
 }
 
@@ -45,6 +39,12 @@ dropdown.addEventListener("click", function () {
 function closeDropdown() {
     topNav.className = "topnav";
     topNav.style.height = "50px";
+}
+
+//---------- ABOUT ME --------------
+
+function didTapWhatsapp() {
+    console.log("https://api.whatsapp.com/send?phone=+972527979914");
 }
 
 //---------- SLIDER --------------

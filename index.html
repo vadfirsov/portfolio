@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>My CSS Website</title>
+    <link rel='stylesheet' href='https://fonts.google.com/sr?family=Helvetica%C2%AE&token=MT'>
+    <!--whatsapp icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Bootstrap-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+<!--    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap-grid.css">-->
+    <link rel="stylesheet" href="main.css">
+
+
+</head>
+
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <!--todo: make the underline custom-->
+            <li class="topnav-right"><a class="hebrew" href="#he">HE</a></li>
+            <li class="topnav-right"><a href="#seperator">/</a></li>
+            <li class="topnav-right"><a href="#en">EN</a></li>
+
+            <form class="dropdownIcon" id="dropdownIcon">
+                <a>&#9776;</a>
+            </form>
+            <li class="topnav-left">
+                <a href="#about" onclick="didTapAboutMe()">About Me</a>
+            </li>
+            <li class="topnav-left">
+                <a href="#projects" onclick="didTapProjects()">Projects</a>
+            </li>
+            <li class="topnav-left">
+                <a href="#contact" onclick="didTapContact()">Contact</a>
+            </li>
+            <script type="text/javascript" src="first.js"></script>
+
+        </ul>
+    </nav>
+
+    <div class="container" id="container-about-me">
+        <div class="row">
+            <div class="col-left">
+                <img class="profile_img" src="profile_img.png">
+            </div>
+            <div class="col-right">
+                <ul>
+                    <h2 class=my-name>Hi! I am Vadim Firsov</h2>
+                    <h2 class=my-name-mobile>Hi! I am</h2>
+                    <h2 class=my-name-mobile>Vadim Firsov.</h2>
+                    <div class="seperator"></div>
+
+                    <h4 class="ios-developer">iOS Developer.</h4>
+                    <div>
+                        <h3 class="who-i-am">Who I am:</h3>
+                        <p class="first">
+                            I'm a self-tought developer with expertise in iOS development,
+                        </p>
+                        <p class="first">A husband and a newbie father, my free time is spent wave-surfing and hanging out with my family and friends.</p>
+                        <p class="first">I am open minded for new Ideas, love sharing my knowledge as well as learning new things.</p>
+                        <h3 class="what-i-do">What I do:</h3>
+                        <p>I can work both in a big team and as an individual, </p>
+                        <p>I work with project managers, QA and UX/UI designers on a daily basis and can take any type of project to it's finish line.</p>
+                        <button type="button" class="ask-me">Let's Chat!
+                            <i class="fa fa-whatsapp" style="font-size:20px;color:#32a852;font-weight: 600"></i>
+                        </button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-projects" id="container-projects">
+
+
+        <div class="row-seperator"> </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="img-holder">
+                        <div class="slider slider_1">
+                            <button class="arrow arrow_left" onclick="moveSlider('inner1', 5, true)">
+                            </button>
+                            <div class="slides_container">
+                                <div id="slides">
+                                    <div id="overflow">
+                                        <div class="inner" id="inner1">
+                                            <div class="slide slide_1">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_2">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_3">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_4">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_5">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bullets">
+                                    <div class="bullet bullet1 first_bullet"></div>
+                                    <div class="bullet bullet1"></div>
+                                    <div class="bullet bullet1"></div>
+                                    <div class="bullet bullet1"></div>
+                                    <div class="bullet bullet1"></div>
+                                </div>
+                            </div>
+
+                            <button class="arrow arrow_right" onclick="moveSlider('inner1', 5, false)"></button>
+                            <script type="text/javascript" src="first.js"></script>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <label class="info-title">Azrieli Malls:</label>
+                        <p class="proj-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis varius sem. Morbi at finibus ante. Aliquam vitae odio sapien. Phasellus sed enim vel est finibus volutpat. Nulla scelerisque lectus et purus finibus hendrerit..</p>
+                        <label class="info-title">My Responsibilities:</label>
+                        <ul class="responsibilities-list">
+                            <h5 class="responsibility">&#8250; i did aos9 this fdont you think si faskh ro sdbo tej that</h5>
+                            <h5 class="responsibility">&#8250; And that also</h5>
+                            <h5 class="responsibility">&#8250; also dont forget abouyt this</h5>
+                            <h5 class="responsibility">&#8250; Well and ofcourse that</h5>
+                            <h5 class="responsibility">&#8250; and dont think i forgot aobout and this thasd</h5>
+                        </ul>
+                    </div>
+                    <h1 class="seperator">__</h1>
+
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="img-holder">
+                        <div class="slider slider_1">
+                            <button class="arrow arrow_left" onclick="moveSlider('inner2', 5, true)"></button>
+                            <div class="slides_container">
+                                <div id="slides">
+                                    <div id="overflow">
+                                        <div class="inner" id="inner2">
+                                            <div class="slide slide_1">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_2">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_3">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_4">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_5">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bullets">
+                                    <div class="bullet bullet2 first_bullet"></div>
+                                    <div class="bullet bullet2"></div>
+                                    <div class="bullet bullet2"></div>
+                                    <div class="bullet bullet2"></div>
+                                    <div class="bullet bullet2"></div>
+                                </div>
+                            </div>
+
+                            <button class="arrow arrow_right" onclick="moveSlider('inner2', 5, false)"></button>
+                            <script type="text/javascript" src="first.js"></script>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <label class="info-title">Azrieli Malls:</label>
+                        <p class="proj-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis varius sem. Morbi at finibus ante. Aliquam vitae odio sapien. Phasellus sed enim vel est finibus volutpat. Nulla scelerisque lectus et purus finibus hendrerit..</p>
+                        <label class="info-title">My Responsibilities:</label>
+                        <ul class="responsibilities-list">
+                            <h5 class="responsibility">&#8250; i did aos9 this fdont you think si faskh ro sdbo tej that</h5>
+                            <h5 class="responsibility">&#8250; And that also</h5>
+                            <h5 class="responsibility">&#8250; also dont forget abouyt this</h5>
+                            <h5 class="responsibility">&#8250; Well and ofcourse that</h5>
+                            <h5 class="responsibility">&#8250; and dont think i forgot aobout and this thasd</h5>
+                        </ul>
+                    </div>
+                    <h1 class="seperator">__</h1>
+
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="img-holder">
+                        <div class="slider slider_1">
+                            <button class="arrow arrow_left" onclick="moveSlider('inner3', 5, true)"></button>
+                            <div class="slides_container">
+                                <div id="slides">
+                                    <div id="overflow">
+                                        <div class="inner" id="inner3">
+                                            <div class="slide slide_1">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_2">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_3">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_4">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_5">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bullets">
+                                    <div class="bullet bullet3 first_bullet"></div>
+                                    <div class="bullet bullet3"></div>
+                                    <div class="bullet bullet3"></div>
+                                    <div class="bullet bullet3"></div>
+                                    <div class="bullet bullet3"></div>
+                                </div>
+                            </div>
+
+                            <button class="arrow arrow_right" onclick="moveSlider('inner3', 5, false)"></button>
+                            <script type="text/javascript" src="first.js"></script>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <label class="info-title">Azrieli Malls:</label>
+                        <p class="proj-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis varius sem. Morbi at finibus ante. Aliquam vitae odio sapien. Phasellus sed enim vel est finibus volutpat. Nulla scelerisque lectus et purus finibus hendrerit..</p>
+                        <label class="info-title">My Responsibilities:</label>
+                        <ul class="responsibilities-list">
+                            <h5 class="responsibility">&#8250; i did aos9 this fdont you think si faskh ro sdbo tej that</h5>
+                            <h5 class="responsibility">&#8250; And that also</h5>
+                            <h5 class="responsibility">&#8250; also dont forget abouyt this</h5>
+                            <h5 class="responsibility">&#8250; Well and ofcourse that</h5>
+                            <h5 class="responsibility">&#8250; and dont think i forgot aobout and this thasd</h5>
+                        </ul>
+                    </div>
+                    <h1 class="seperator">__</h1>
+
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="img-holder">
+                        <div class="slider slider_1">
+                            <button class="arrow arrow_left" onclick="moveSlider('inner4', 5, true)"></button>
+                            <div class="slides_container">
+                                <div id="slides">
+                                    <div id="overflow">
+                                        <div class="inner" id="inner4">
+                                            <div class="slide slide_1">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_2">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_3">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_4">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_5">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bullets">
+                                    <div class="bullet bullet4 first_bullet"></div>
+                                    <div class="bullet bullet4"></div>
+                                    <div class="bullet bullet4"></div>
+                                    <div class="bullet bullet4"></div>
+                                    <div class="bullet bullet4"></div>
+                                </div>
+                            </div>
+
+                            <button class="arrow arrow_right" onclick="moveSlider('inner4', 5, false)"></button>
+                            <script type="text/javascript" src="first.js"></script>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <label class="info-title">Azrieli Malls:</label>
+                        <p class="proj-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis varius sem. Morbi at finibus ante. Aliquam vitae odio sapien. Phasellus sed enim vel est finibus volutpat. Nulla scelerisque lectus et purus finibus hendrerit..</p>
+                        <label class="info-title">My Responsibilities:</label>
+                        <ul class="responsibilities-list">
+                            <h5 class="responsibility">&#8250; i did aos9 this fdont you think si faskh ro sdbo tej that</h5>
+                            <h5 class="responsibility">&#8250; And that also</h5>
+                            <h5 class="responsibility">&#8250; also dont forget abouyt this</h5>
+                            <h5 class="responsibility">&#8250; Well and ofcourse that</h5>
+                            <h5 class="responsibility">&#8250; and dont think i forgot aobout and this thasd</h5>
+                        </ul>
+                    </div>
+                    <h1 class="seperator">__</h1>
+
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="img-holder">
+                        <div class="slider slider_1">
+                            <button class="arrow arrow_left" onclick="moveSlider('inner5', 5, true)"></button>
+                            <div class="slides_container">
+                                <div id="slides">
+                                    <div id="overflow">
+                                        <div class="inner" id="inner5">
+                                            <div class="slide slide_1">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_2">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_3">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_4">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_5">
+                                                <div class="slide-content">
+                                                    <img class="iphone" src="screenshots/aroma_1.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bullets">
+                                    <div class="bullet bullet5 first_bullet"></div>
+                                    <div class="bullet bullet5"></div>
+                                    <div class="bullet bullet5"></div>
+                                    <div class="bullet bullet5"></div>
+                                    <div class="bullet bullet5"></div>
+                                </div>
+                            </div>
+
+                            <button class="arrow arrow_right" onclick="moveSlider('inner5', 5, false)"></button>
+                            <script type="text/javascript" src="first.js"></script>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <label class="info-title">Azrieli Malls:</label>
+                        <p class="proj-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis varius sem. Morbi at finibus ante. Aliquam vitae odio sapien. Phasellus sed enim vel est finibus volutpat. Nulla scelerisque lectus et purus finibus hendrerit..</p>
+                        <label class="info-title">My Responsibilities:</label>
+                        <ul class="responsibilities-list">
+                            <h5 class="responsibility">&#8250; i did aos9 this fdont you think si faskh ro sdbo tej that</h5>
+                            <h5 class="responsibility">&#8250; And that also</h5>
+                            <h5 class="responsibility">&#8250; also dont forget abouyt this</h5>
+                            <h5 class="responsibility">&#8250; Well and ofcourse that</h5>
+                            <h5 class="responsibility">&#8250; and dont think i forgot aobout and this thasd</h5>
+                        </ul>
+                    </div>
+                    <h1 class="seperator">__</h1>
+
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+    <div class="container-contact-me" id="container-contact-me">
+        <div class="row">
+            <div class="contact-form">
+                <div class="txtb header">
+                    <h2 class=my-name>Let's talk!</h2>
+                    <div class="seperator"></div>
+                </div>
+                <div class="txtb" onclick="resetErrors()">
+                    <input id="name" type="text" name="" value="" placeholder="Name:">
+                    <label id="errName" class="error name">placeholder</label>
+                </div>
+                <div class="txtb" onclick="resetErrors()">
+                    <input id="email" type="email" name="" value="" placeholder="Email:">
+                    <label id="errEmail" class="error email">placeholder</label>
+                </div>
+                <div class="txtb" onclick="resetErrors()">
+                    <textarea id="message" placeholder="Message:"></textarea>
+                    <label id="errMsg" class="error message">placeholder</label>
+                </div>
+                <button class="btn" onclick="didClickSend()">Send</button>
+                <script type="text/javascript" src="first.js"></script>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-footer">
+
+    </div>
+
+
+
+    <!--        <script type="text/javascript" src="first.js"></script>-->
+
+
+    <!--
+        <script>
+            function dropdownMenu() {
+                var click = document.getElementById("dropdownClick");
+                if (click.className === "topnav") {
+                    click.className += " responsive";
+                    /*change topnav to topnav responsive*/
+                }
+                else {
+                    click.className = "topnav";
+                }
+            }
+        </script> 
+-->
+
+
+
+</body>
+
+</html>
